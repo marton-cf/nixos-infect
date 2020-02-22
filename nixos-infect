@@ -22,7 +22,6 @@ makeConf() {
   cat > /etc/nixos/configuration.nix << EOF
 { ... }: {
   imports = [
-    ./hardware-configuration.nix
     $network_import
     $NIXOS_IMPORT
   ];
