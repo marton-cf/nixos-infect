@@ -153,7 +153,7 @@ removeSwap() {
 
 prepareEnv() {
   # $grubdev is used in makeConf()
-  for grubdev in /dev/vda /dev/sda; do [[ -e $grubdev ]] && break; done
+  for grubdev in /dev/xvda /dev/vda /dev/sda; do [[ -e $grubdev ]] && break; done
 
   # Retrieve root fs block device
   #                   (get root mount)  (get partition or logical volume)
